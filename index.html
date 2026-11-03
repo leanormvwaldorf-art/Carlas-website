@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#eee7ff">
+  <title>A Little Corner of Carla ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain"></div>
+  <header class="topbar">
+    <a class="brand" href="#home">c. <span>♡</span></a>
+    <nav id="nav">
+      <a href="#about">the girl</a><a href="#favourites">little loves</a><a href="#fun">just for fun</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="sparkle">✳</span> a tiny website for a lovely human</p>
+        <h1>Meet <em>Carla.</em><br>She's a whole<br><span class="outlined">little universe.</span></h1>
+        <p class="intro">A simple girl with a soft spot for lilac, good pasta, family films and being just the right amount of silly.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#about">Get to know her <span>↗</span></a>
+          <button class="button soft" id="surpriseBtn">Surprise me ✨</button>
+        </div>
+        <p class="tiny-note">made with a little extra love <span>♡</span></p>
+      </div>
+      <div class="hero-art">
+        <div class="blob"></div>
+        <div class="photo-frame"><img src="assets/carla.jpg" alt="Carla smiling in a classroom"></div>
+        <span class="sticker sticker-one">certified<br>cutie ☆</span>
+        <span class="sticker sticker-two">100%<br>quirky!</span>
+        <span class="floating-heart">♡</span>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="section-label">01 / THE MAIN CHARACTER</div>
+      <div class="about-grid">
+        <div><h2>Soft heart.<br><em>Funny brain.</em></h2></div>
+        <div class="about-text">
+          <p>Carla is the kind of person who makes the little moments feel less ordinary. She's got a simple, pretty aesthetic, a quirky sense of humour, and a talent for making people wonder, “What is going on in her head?”</p>
+          <p>She loves the cosy things: family, comfort food, a good film, and of course, every shade of light purple. Basically, a walking reminder that being yourself is the best aesthetic.</p>
+          <div class="traits"><span>♡ sweet</span><span>✳ quirky</span><span>☁ easygoing</span><span>✧ a little chaotic</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="favourites section" id="favourites">
+      <div class="section-label">02 / HER LITTLE LOVES</div>
+      <h2>The things that<br><em>make her, her.</em></h2>
+      <div class="cards">
+        <article class="love-card lilac-card">
+          <div class="card-icon">☁</div><p class="card-kicker">HER COLOUR</p><h3>Light purple</h3>
+          <p>Like a quiet afternoon sky, a soft daydream, and a little bit of magic.</p>
+          <div class="swatches"><i></i><i></i><i></i><i></i></div>
+        </article>
+        <article class="love-card pasta-card">
+          <div class="card-icon">🍝</div><p class="card-kicker">HER COMFORT FOOD</p><h3>Carbonara</h3>
+          <p>Creamy, cosy, delicious. A plate of “everything is going to be alright”.</p>
+          <button class="text-link" id="recipeBtn">A tiny pasta note ↗</button>
+        </article>
+        <article class="love-card movie-card">
+          <div class="card-icon">🎬</div><p class="card-kicker">HER FAVOURITE MOVIE</p><h3>Four Sisters<br>and a Wedding</h3>
+          <p>Family, feelings, funny moments, and a reminder that love can be wonderfully messy.</p>
+          <span class="movie-tag">FILM NIGHT PICK</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="family section">
+      <div class="family-illustration" aria-hidden="true"><span>♡</span><span>✿</span><span>♡</span><b>FAMILY<br>FIRST</b></div>
+      <div class="family-copy">
+        <div class="section-label">A BIG PART OF HER HEART</div>
+        <h2>Four sisters,<br><em>one big kind of love.</em></h2>
+        <p>There's something special about the people who know all your stories — including the embarrassing ones. Carla's love for <i>Four Sisters and a Wedding</i> gets a little heart-shaped corner here, because family is its own kind of forever.</p>
+        <span class="handwritten">pass the tissues (and popcorn) ♡</span>
+      </div>
+    </section>
+
+    <section class="fun section" id="fun">
+      <div class="section-label">03 / A VERY IMPORTANT SCIENTIFIC TEST</div>
+      <h2>What kind of Carla<br><em>are you today?</em></h2>
+      <p class="fun-intro">Tap the button. Let the universe decide. (The universe is just this website, but still.)</p>
+      <div class="mood-box">
+        <div class="mood-icon" id="moodIcon">☁</div>
+        <p class="mood-result" id="moodResult">Your Carla mood is waiting...</p>
+        <button class="button primary" id="moodBtn">Reveal my mood ✨</button>
+      </div>
+      <div class="note-card">
+        <div class="note-top"><span>✉ a little note</span><span>for Carla ♡</span></div>
+        <h3>In case you need a reminder...</h3>
+        <p>You don't have to be anyone else. Keep your soft heart, your odd little jokes, and the things that make you happy. The world is better with your particular kind of sparkle in it.</p>
+        <button class="text-link" id="noteBtn">Read another little reminder ↗</button>
+        <p class="extra-note" id="extraNote" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="closing-flower">✿</div>
+      <p class="eyebrow">that's our girl</p>
+      <h2>Stay lovely,<br><em>stay a little weird.</em></h2>
+      <p>And never let anyone steal your last bite of carbonara.</p>
+      <a href="#home" class="back-top">back to the top ↑</a>
+    </section>
+  </main>
+
+  <footer><span>made for Carla, with ♡</span><span>lilac skies & pasta days</span></footer>
+
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button class="modal-close" id="closeModal" aria-label="Close">×</button>
+      <div class="modal-icon" id="modalIcon">🍝</div>
+      <p class="eyebrow">A LITTLE SOMETHING</p>
+      <h2 id="modalTitle">A carbonara appreciation note</h2>
+      <p id="modalText">Some things don't need explaining. A warm bowl of carbonara is one of them. Creamy, comforting, and worth looking forward to.</p>
+      <button class="button primary" id="okayBtn">Cute. Got it ♡</button>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
